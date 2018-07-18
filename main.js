@@ -7,9 +7,9 @@ import { createStore, applyMiddleware } from 'redux'
 import Counter from './Counter'
 import reducer from './reducers'
 
-const store = createStore(reducer)
+const store = createStore(reducer);
 
-const action = type => store.dispatch({type})
+const action = type => store.dispatch({type});
 
 function render() {
   ReactDOM.render(
@@ -21,5 +21,5 @@ function render() {
   )
 }
 
-render()
-store.subscribe(render)
+render();
+store.subscribe(render);
